@@ -4,24 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adminka</title>
-    <link rel="stylesheet" href="./css//index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <div class="container">
-        <div class="header">
-            <div class="group">
-            </svg>
-              <input placeholder="F.I.SH" type="search" class="input">
-            </div>
-            <div>
-                <select name="salom" id="">
-                    <option value="">Lavozmni turini tanlag</option>
-                    <option value="">Junior</option>
-                    <option value="">middle</option>                    <option value="">senior</option>
-
-                </select>
-            </div>
+      <div class="header">
+        <div class="group">
+          <input placeholder="F.I.SH" type="search" class="input" />
         </div>
+        <div>
+          <select name="salom">
+            <option value="">Lavozim turini tanlang</option>
+            <option value="">Junior</option>
+            <option value="">Middle</option>
+            <option value="">Senior</option>
+          </select>
+        </div>
+        <div>
+          <select class="selectt" name="salom">
+            <option value="">Manzilni tanlang</option>
+            <option value="">Bukhara</option>
+            <option value="">Samarqand</option>
+            <option value="">Farg'ona</option>
+            <option value="">Toshkent</option>
+          </select>
+        </div>
+        <button id="openModalButton">Qushish  </button>
+
+      </div>
     </div>
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>O'quvchining ma'lumotlari</h2>
+        <div class="her"></div>
+        <li>Ismini kiriting</li>
+        <input class="box" type="text" placeholder="Ism" />
+        <li>Familyasini kiriting</li>
+        <input class="box" type="text" placeholder="Familya" />
+        <li>manzilni tanlag</li>
+        <select class="Samarqand" name="" id="">
+          <option value="">Bukhara</option>
+          <option value="">Samarqand</option>
+          <option value="">Toshkent</option>
+          <option value="">Farg'ona</option>
+        </select> <br>
+<div class="valid">
+<div>
+  <li>Tug'ilgan kuni</li>
+  <input type="date" id="birthdate" name="birthdate">
+</div>
+ <div>
+  <li class="lavozim">Lavozim</li>
+  <select class="Samarqandd" name="" id="">
+    <option value="">React</option>
+    <option value="">Nodjes</option>
+    <option value="">Python</option>
+  </select>
+ </div>
+
+ 
+</div>        
+<div class="qand">
+<div>
+  <li class="lavozim">Lavozim turi</li>
+  <select class="Samarqandd" name="" id="">
+    <option value="">React</option>
+    <option value="">Nodjes</option>
+    <option value="">Python</option>
+  </select>
+</div>
+
+<div>
+  <li class="lavozim">Moashi</li>
+<input type="number" id="quantity" name="quantity" min="-100" max="10000" required>
+
+</div>
+</div>
+        <button id="saveButton">Saqlash</button>
+      </div>
+      <div>
+        
+      </div>
+    </div>
+
+
+    <script src="./dist/Main.js"></script>
   </body>
 </html>
