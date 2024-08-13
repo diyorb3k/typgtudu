@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px ;
+    box-sizing: border-box;
+
+
+}
+/* From Uiverse.io by alexruix */ 
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+   }
+   
+   .input {
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-top-right-radius:0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 1px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    text-indent: 17px;
+    padding-right: 30px ;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(25, 122, 213, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(23, 93, 163, 0.1);
+   }
+   
+
+   
+   
+   
+   .header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+   }
+   
+   
+   select{
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+   }
+
+   select:focus, input:hover {
+    outline: none;
+    border-color: rgba(25, 122, 213, 0.4);
+    box-shadow: 0 0 0 4px rgba(23, 93, 163, 0.1);
+   }
