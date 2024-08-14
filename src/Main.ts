@@ -1,4 +1,3 @@
-// Modalni ochish
 const openModalButton = document.getElementById('openModalButton');
 const modal = document.getElementById('myModal');
 const closeButton = document.querySelector('.close');
@@ -13,7 +12,6 @@ if (openModalButton && modal && closeButton) {
   });
 }
 
-// Form elementlarini olish
 const saveButton = document.getElementById('saveButton');
 const nameInput = document.querySelector('input[placeholder="Ism"]') as HTMLInputElement;
 const familyInput = document.querySelector('input[placeholder="Familya"]') as HTMLInputElement;
@@ -26,7 +24,6 @@ const studentListContainer = document.querySelector('.student-list'); // Ma'lumo
 
 if (saveButton && nameInput && familyInput && addressSelect && birthdateInput && positionSelect && salaryInput && marriedCheckbox) {
   saveButton.addEventListener('click', () => {
-    // Input qiymatlarini olish
     const nameValue = nameInput.value;
     const familyValue = familyInput.value;
     const addressValue = addressSelect.value;
@@ -35,7 +32,6 @@ if (saveButton && nameInput && familyInput && addressSelect && birthdateInput &&
     const salaryValue = salaryInput.value;
     const marriedValue = marriedCheckbox.checked ? 'Yes' : 'No';
 
-    // Ma'lumotlarni objectda saqlash
     const studentInfo = {
       name: nameValue,
       family: familyValue,
@@ -46,26 +42,22 @@ if (saveButton && nameInput && familyInput && addressSelect && birthdateInput &&
       married: marriedValue,
     };
 
-    // Ma'lumotlarni localStorage ga saqlash
     let students = JSON.parse(localStorage.getItem('students') || '[]');
     students.push(studentInfo);
     localStorage.setItem('students', JSON.stringify(students));
 
-    // Modalni yopish
     if (modal) {
       modal.style.display = 'none';
     }
 
-    // Ma'lumotlarni HTMLda ko‘rsatish
     displayStudents();
   });
 }
 
-// LocalStorage dagi ma'lumotlarni ko'rsatish
 function displayStudents() {
   const students = JSON.parse(localStorage.getItem('students') || '[]');
   if (studentListContainer) {
-    studentListContainer.innerHTML = ''; // Eski ma'lumotlarni tozalash
+    studentListContainer.innerHTML = '';
     students.forEach((student: any, index: number) => {
       const studentElement = document.createElement('div');
       studentElement.innerHTML = `
@@ -84,5 +76,4 @@ function displayStudents() {
   }
 }
 
-// Sahifa yuklanganda ma'lumotlarni ko'rsatish
 window.addEventListener('load', displayStudents);

@@ -15,99 +15,94 @@
         <div>
           <select name="salom">
             <option value="">Lavozim turini tanlang</option>
-            <option value="">Junior</option>
-            <option value="">Middle</option>
-            <option value="">Senior</option>
+            <option value="Junior">Junior</option>
+            <option value="Middle">Middle</option>
+            <option value="Senior">Senior</option>
           </select>
         </div>
         <div>
           <select class="selectt" name="salom">
             <option value="">Manzilni tanlang</option>
-            <option value="">Bukhara</option>
-            <option value="">Samarqand</option>
-            <option value="">Farg'ona</option>
-            <option value="">Toshkent</option>
+            <option value="Bukhara">Bukhara</option>
+            <option value="Samarqand">Samarqand</option>
+            <option value="Farg'ona">Farg'ona</option>
+            <option value="Toshkent">Toshkent</option>
           </select>
         </div>
         <button id="openModalButton">Qushish</button>
       </div>
-    </div>
 
-    <!-- Modal HTML -->
-    <div id="myModal" class="modal" style="display: none;">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>O'quvchining ma'lumotlari</h2>
-        <div class="her"></div>
-        <li>Ismini kiriting</li>
-        <input class="box" type="text" placeholder="Ism" />
-        <li>Familyasini kiriting</li>
-        <input class="box" type="text" placeholder="Familya" />
-        <li>manzilni tanlag</li>
-        <select class="Samarqand" name="" id="">
-          <option value="">Bukhara</option>
-          <option value="">Samarqand</option>
-          <option value="">Toshkent</option>
-          <option value="">Farg'ona</option>
-        </select>
-        <br />
-        <div class="valid">
-          <div>
-            <li>Tug'ilgan kuni</li>
-            <input type="date" id="birthdate" name="birthdate" />
+      <div id="myModal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>O'quvchining ma'lumotlari</h2>
+          <div class="her"></div>
+          <li>Ismini kiriting</li>
+          <input class="box" type="text" placeholder="Ism" />
+          <li>Familyasini kiriting</li>
+          <input class="box" type="text" placeholder="Familya" />
+          <li>Manzilni tanlang</li>
+          <select class="Samarqand" name="" id="">
+            <option value="Bukhara">Bukhara</option>
+            <option value="Samarqand">Samarqand</option>
+            <option value="Toshkent">Toshkent</option>
+            <option value="Farg'ona">Farg'ona</option>
+          </select>
+          <br />
+          <div class="valid">
+            <div>
+              <li>Tug'ilgan kuni</li>
+              <input type="date" id="birthdate" name="birthdate" />
+            </div>
+            <div>
+              <li class="lavozim">Lavozim</li>
+              <select class="Samarqandd" name="" id="">
+                <option value="React">React</option>
+                <option value="Node.js">Node.js</option>
+                <option value="Python">Python</option>
+              </select>
+            </div>
           </div>
-          <div>
-            <li class="lavozim">Lavozim</li>
-            <select class="Samarqandd" name="" id="">
-              <option value="">React</option>
-              <option value="">Nodjes</option>
-              <option value="">Python</option>
-            </select>
+          <div class="qand">
+            <div>
+              <li class="lavozim">Lavozim turi</li>
+              <select class="Samarqandd" name="" id="">
+                <option value="Junior">Junior</option>
+                <option value="Middle">Middle</option>
+                <option value="Senior">Senior</option>
+              </select>
+            </div>
+            <div class="cena">
+              <li class="lavozim">Maosh</li>
+              <input class="con" type="number" id="quantity" name="quantity" min="0" max="10000" required />
+            </div>
           </div>
+          <div class="chekbox">
+            <li>Uylanganmi</li>
+            <input type="checkbox" name="option1" value="Option 1" />
+          </div>
+          <button class="Add" id="saveButton">Qo'shish</button>
         </div>
-        <div class="qand">
-          <div>
-            <li class="lavozim">Lavozim turi</li>
-            <select class="Samarqandd" name="" id="">
-              <option value="">React</option>
-              <option value="">Nodjes</option>
-              <option value="">Python</option>
-            </select>
-          </div>
-
-          <div class="cena">
-            <li class="lavozim">Moashi</li>
-            <input class="con" type="number" id="quantity" name="quantity" min="-100" max="10000" required />
-          </div>
-        </div>
-        <div class="chekbox">
-          <li>uylanganmi</li>
-          <input type="checkbox" name="option1" value="Option 1" />
-        </div>
-
-        <button class="Add" id="saveButton">Qo'shish</button>
       </div>
-    </div>
 
-    <!-- O'quvchilar ro'yxati -->
-<!-- O'quvchilar ro'yxati jadvali -->
-<div class="student-list container">
-  <table class="styled-table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Ismi</th>
-        <th>Familyasi</th>
-        <th>Manzil</th>
-        <th>Tug'ilgan kuni</th>
-        <th>Lavozim</th>
-        <th>Maoshi</th>
-        <th>Uylanganmi</th>
-      </tr>
-    </thead>
-    <tbody id="studentTableBody"></tbody>
-  </table>
-</div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Ismi</th>
+            <th>Familyasi</th>
+            <th>Manzil</th>
+            <th>Tug'ilgan kuni</th>
+            <th>Lavozim</th>
+            <th>Maoshi</th>
+            <th>Uylanganmi</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody">
+        </tbody>
+      </table>
+    </div>
 
     <script src="./dist/Main.js"></script>
   </body>
