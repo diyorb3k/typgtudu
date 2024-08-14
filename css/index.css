@@ -148,22 +148,87 @@ input:hover {
   border-radius: 4px;
 }
 .valid {
-    margin-top: 20px;
+  margin-top: 20px;
   display: flex !important;
   align-items: center !important;
   gap: 10px;
 }
 .Samarqandd {
+  margin-top: -1px;
   width: 230px;
   background-color: #fff;
   color: #222;
   border: 1px solid #ced4da;
   border-radius: 4px;
 }
-.lavozim{
-    margin-bottom: -14px
+.lavozim {
+  /* margin-bottom: -10px; */
 }
-.qand{
+.qand {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+.cena {
+  display: flex;
+  flex-direction: column;
+}
+.con {
+  margin-bottom: -1px;
+}
+.Add {
+}
+button {
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: rgba(14, 157, 14, 0.775);
+  color: #fff;
+}
+.chekbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Tablee */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.styled-table th, 
+.styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.styled-table td {
+  transition: background-color 0.3s ease;
 }

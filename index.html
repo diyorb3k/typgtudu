@@ -29,8 +29,7 @@
             <option value="">Toshkent</option>
           </select>
         </div>
-        <button id="openModalButton">Qushish  </button>
-
+        <button id="openModalButton">Qushish</button>
       </div>
     </div>
 
@@ -50,46 +49,65 @@
           <option value="">Samarqand</option>
           <option value="">Toshkent</option>
           <option value="">Farg'ona</option>
-        </select> <br>
-<div class="valid">
-<div>
-  <li>Tug'ilgan kuni</li>
-  <input type="date" id="birthdate" name="birthdate">
-</div>
- <div>
-  <li class="lavozim">Lavozim</li>
-  <select class="Samarqandd" name="" id="">
-    <option value="">React</option>
-    <option value="">Nodjes</option>
-    <option value="">Python</option>
-  </select>
- </div>
+        </select>
+        <br />
+        <div class="valid">
+          <div>
+            <li>Tug'ilgan kuni</li>
+            <input type="date" id="birthdate" name="birthdate" />
+          </div>
+          <div>
+            <li class="lavozim">Lavozim</li>
+            <select class="Samarqandd" name="" id="">
+              <option value="">React</option>
+              <option value="">Nodjes</option>
+              <option value="">Python</option>
+            </select>
+          </div>
+        </div>
+        <div class="qand">
+          <div>
+            <li class="lavozim">Lavozim turi</li>
+            <select class="Samarqandd" name="" id="">
+              <option value="">React</option>
+              <option value="">Nodjes</option>
+              <option value="">Python</option>
+            </select>
+          </div>
 
- 
-</div>        
-<div class="qand">
-<div>
-  <li class="lavozim">Lavozim turi</li>
-  <select class="Samarqandd" name="" id="">
-    <option value="">React</option>
-    <option value="">Nodjes</option>
-    <option value="">Python</option>
-  </select>
-</div>
+          <div class="cena">
+            <li class="lavozim">Moashi</li>
+            <input class="con" type="number" id="quantity" name="quantity" min="-100" max="10000" required />
+          </div>
+        </div>
+        <div class="chekbox">
+          <li>uylanganmi</li>
+          <input type="checkbox" name="option1" value="Option 1" />
+        </div>
 
-<div>
-  <li class="lavozim">Moashi</li>
-<input type="number" id="quantity" name="quantity" min="-100" max="10000" required>
-
-</div>
-</div>
-        <button id="saveButton">Saqlash</button>
-      </div>
-      <div>
-        
+        <button class="Add" id="saveButton">Qo'shish</button>
       </div>
     </div>
 
+    <!-- O'quvchilar ro'yxati -->
+<!-- O'quvchilar ro'yxati jadvali -->
+<div class="student-list container">
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Ismi</th>
+        <th>Familyasi</th>
+        <th>Manzil</th>
+        <th>Tug'ilgan kuni</th>
+        <th>Lavozim</th>
+        <th>Maoshi</th>
+        <th>Uylanganmi</th>
+      </tr>
+    </thead>
+    <tbody id="studentTableBody"></tbody>
+  </table>
+</div>
 
     <script src="./dist/Main.js"></script>
   </body>
