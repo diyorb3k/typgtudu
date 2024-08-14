@@ -10,7 +10,7 @@
     <div class="container">
       <div class="header">
         <div class="group">
-          <input placeholder="F.I.SH" type="search" class="input" />
+          <input placeholder="F.I.SH" type="search" class="input" id="searchInput" />
         </div>
         <div>
           <select name="salom">
@@ -38,11 +38,11 @@
           <h2>O'quvchining ma'lumotlari</h2>
           <div class="her"></div>
           <li>Ismini kiriting</li>
-          <input class="box" type="text" placeholder="Ism" />
+          <input class="box" type="text" placeholder="Ism" id="nameInput" />
           <li>Familyasini kiriting</li>
-          <input class="box" type="text" placeholder="Familya" />
+          <input class="box" type="text" placeholder="Familya" id="familyInput" />
           <li>Manzilni tanlang</li>
-          <select class="Samarqand" name="" id="">
+          <select class="Samarqand" id="addressSelect">
             <option value="Bukhara">Bukhara</option>
             <option value="Samarqand">Samarqand</option>
             <option value="Toshkent">Toshkent</option>
@@ -56,7 +56,7 @@
             </div>
             <div>
               <li class="lavozim">Lavozim</li>
-              <select class="Samarqandd" name="" id="">
+              <select class="Samarqandd" id="positionSelect">
                 <option value="React">React</option>
                 <option value="Node.js">Node.js</option>
                 <option value="Python">Python</option>
@@ -66,7 +66,7 @@
           <div class="qand">
             <div>
               <li class="lavozim">Lavozim turi</li>
-              <select class="Samarqandd" name="" id="">
+              <select class="Samarqandd" id="jobTypeSelect">
                 <option value="Junior">Junior</option>
                 <option value="Middle">Middle</option>
                 <option value="Senior">Senior</option>
@@ -79,7 +79,7 @@
           </div>
           <div class="chekbox">
             <li>Uylanganmi</li>
-            <input type="checkbox" name="option1" value="Option 1" />
+            <input type="checkbox" id="marriedCheckbox" name="option1" value="Option 1" />
           </div>
           <button class="Add" id="saveButton">Qo'shish</button>
         </div>
