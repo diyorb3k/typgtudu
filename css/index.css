@@ -20,7 +20,6 @@ input {
   padding: 10px;
   border-radius: 4px;
 }
-/* From Uiverse.io by alexruix */
 .group {
   display: flex;
   line-height: 28px;
@@ -95,7 +94,7 @@ input:hover {
   box-shadow: 0 0 0 4px #adb5bd;
 }
 .modal {
-  display: none; /* Modalni avval yashirish */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -103,7 +102,7 @@ input:hover {
   width: 100%;
   height: 100vh;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4); /* Qorong'i fon */
+  background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
 
@@ -162,7 +161,6 @@ input:hover {
   border-radius: 4px;
 }
 .lavozim {
-  /* margin-bottom: -10px; */
 }
 .qand {
   display: flex;
@@ -187,12 +185,11 @@ button {
   background-color: rgba(14, 157, 14, 0.775);
   color: #fff;
 }
-.chekbox{
+.chekbox {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* Tablee */
 .styled-table {
   width: 100%;
   border-collapse: collapse;
@@ -201,7 +198,7 @@ button {
   text-align: left;
 }
 
-.styled-table th, 
+.styled-table th,
 .styled-table td {
   padding: 12px 15px;
   border: 1px solid #ddd;
@@ -232,10 +229,7 @@ button {
 .styled-table td {
   transition: background-color 0.3s ease;
 }
-/* /
- */
 
- /* Modal */
 .modal {
   position: fixed;
   top: 0;
@@ -270,7 +264,8 @@ table {
   margin-top: 20px;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   border: 1px solid #ddd;
   text-align: left;
